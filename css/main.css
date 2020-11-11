@@ -1,0 +1,149 @@
+:root{
+    --vermelho: #e50914;
+    --preta: #141414;
+    --cinza: #AAA;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    text-decoration: none;
+    font-family: sans-serif, 'Times New Roman', Times, serif;
+    color: white;
+}
+body{
+    background: var(--preta);
+}
+header .container{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left: 1%;
+    color: var(--vermelho);
+    font-family: 'Arial Black','Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.menu-principal{
+    margin-left: 1%;
+    width: 50%;
+}
+.menu-principal a{
+    color: var(--cinza);
+    margin-right: 1%;
+}
+.menu-user{
+    width: 50%;
+    text-align: right;
+}
+.menu-user a{
+    color: var(--cinza);
+    margin-right: 2%;
+}
+.menu-user a:hover{
+    color: #fff;
+}
+.menu-principal a:hover{
+    color: #fff;
+}
+.menu-topo{
+    margin: 0;
+    margin-right: 1%;
+}
+.filme-principal{
+    padding-left: 1%;
+    font-size: 16px;
+    background: linear-gradient(to left, transparent 10%, black),url('/img/starTreckPicard.jpg');
+    background-size:cover;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .container{
+    width: 40%;
+    margin-bottom: 1%;
+}
+.filme-principal .container .titulo{
+    font-size: 40px;
+    font-family: initial;
+    margin-bottom: 1%;
+}
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao{
+    margin-right: 10px;
+    border: none;
+    background-color: rgba(230,230,230,.10);
+    color: white;
+    padding: 19px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border: transparent;
+    transition: .9s ease all;
+    border-radius: 2px;
+}
+.botao:hover{
+    transition: .9s ease-in-out;
+    background-color: rgba(160,160,160,.50);
+}
+.botao i{
+    margin-right: 2px;
+}
+
+.select_img{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    background:transparent;
+}
+
+.select2-selection{
+    background-color: #141414 !important;
+    border: black ;
+}
+.mais-vistos{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+@media screen and (max-width:900px){
+    .menu-principal{
+        font-size: 12px;
+    }
+    .menu-user{
+        font-size: 12px;
+    }
+    .filme-principal .container{
+        width: 60%;
+    }
+}
+@media screen and (max-width:600px){
+    .menu-principal{
+        font-size: 9px;
+    }
+    .menu-user{
+        font-size: 9px;
+    }
+    .filme-principal{
+        font-size: 12px;
+    }
+    .filme-principal .container .titulo{
+        font-size: 20px;
+    }
+    .filme-principal .container{
+        width: 100%;
+    }
+    .botao{
+        padding: 10px 21px;
+        font-size: 10px;
+    }
+}
